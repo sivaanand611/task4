@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        #a {
+            height: 300px;
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 450px 30% #8f8a8a;
+            margin: 20px auto;
+            padding: 20px;
+            margin-top: 100px;
+        }
+        #d, #e, #f, #h, #g {
+            position: relative;
+            padding: 10px 40px; 
+        }
+        #g a {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="background-image:url(https://cdn.pixabay.com/photo/2024/04/13/10/20/peacock-8693634_1280.jpg);">
+    <div id="a">
+        <div id="d">
+            <form>
+                <label>Email id</label><br>
+                <input type="text" style="width: 200px; border: none; background: none; outline: none; border-bottom: 1px solid;"><br>
+            </form>
+        </div>
+        <div id="e">
+            <label>Enter password</label><br>
+            <input type="password" id="password" style="width: 200px; border: none; background: none; outline: none; border-bottom: 1px solid;"><br>
+        </div>
+        <div id="f">
+            <input type="checkbox" id="showPassword" onclick="Password()"> <label for="showPassword">Show password</label><br>
+        </div>
+        <div id="h">
+            <button style="height: 35px; width: 200px; background-color: gray; color: black; border-radius: 30px; font-size: 15px;">Log in</button>
+        </div>
+        <div id="g">
+            <a href="index1.html">Signup</a>
+        </div>
+    </div>
+
+    <script>
+        function Password() {
+            const passwordInput = document.getElementById('password');
+            const showPasswordCheckbox = document.getElementById('showPassword');
+            if (showPasswordCheckbox.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>
